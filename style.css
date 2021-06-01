@@ -46,6 +46,14 @@ header img {
     padding: 1.8rem;
 }
 
+.btn-custom-rounded {
+    padding: 5px 9px !important;
+}
+
+.opacity-50 {
+    opacity: .5;
+}
+
 
 /** LANDING **/
 .menu_list {
@@ -130,4 +138,70 @@ header img {
 
 .main_content {
     margin-top: 700px;
+}
+
+.main_content section {
+    margin-bottom: -100px;
+    position: relative;
+}
+
+.main_content section:hover {
+    z-index: 9;
+}
+
+.film_list {
+    /* overflow-x: scroll; */
+    list-style: none;
+    white-space: nowrap;
+    padding: 20px 0;
+    display: block;
+    border: 1px solid transparent;
+    
+}
+
+.film {
+    display: inline-block;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 4px;
+    overflow: auto;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+.film:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 999;
+}
+
+.film:hover .film_info {
+    transform: scale(1);
+}
+
+.film_info {
+    background: #171717;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.film_info .col-12 {
+    margin-top: 5px;
+}
+
+.film_info .col-12:first-child {
+    margin-bottom: 20px;
+
+}
+
+.film_info .col-12 p {
+    background: #FFFFFF38;
+    font-size: 12px;
+}
+
+.film_info p span {
+    color: #fff;
 }
